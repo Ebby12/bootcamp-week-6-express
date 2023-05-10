@@ -13,7 +13,7 @@ describe("User routes", () => {
   //   expect(parsedResponse[0].username).toBe('kat1')
   // })
 
-  // the next test below is extra
+  // the next test below has extra mocking in it
   it('should create a user', async () => {
     User.create.mockResolvedValue({'username': 'testKat', 'email': 'test@test.com', 'password': '2222'});
     
